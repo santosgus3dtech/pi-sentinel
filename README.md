@@ -9,6 +9,14 @@ PiSentinel is a self-hosted Raspberry Pi operations console for monitoring a loc
 
 This public repository is a sanitized portfolio edition. It contains no production database, credentials, device identifiers, or private network inventory.
 
+## Screenshots
+
+![PiSentinel network overview with synthetic devices](docs/screenshots/overview.png)
+
+![PiSentinel 3D printer telemetry using the built-in mock adapter](docs/screenshots/printers.png)
+
+Both screens use synthetic portfolio data and the deterministic mock printer adapter.
+
 ## What it demonstrates
 
 - Bounded IPv4 discovery with ARP, ICMP, DNS, and limited TCP service checks.
