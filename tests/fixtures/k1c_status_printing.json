@@ -1,0 +1,20 @@
+{
+  "TotalLayer": 240,
+  "bedTemp0": "59.800000",
+  "connect": 1,
+  "deviceState": 1,
+  "err": {"errcode": 0, "key": 0, "value": ""},
+  "hostname": "K1C-fixture",
+  "layer": 73,
+  "model": "K1C",
+  "nozzleTemp": "214.600000",
+  "printFileName": "/usr/data/printer_data/gcodes/fixture-part.gcode",
+  "printJobTime": 1320,
+  "printLeftTime": 3480,
+  "printProgress": 42.5,
+  "state": 1,
+  "targetBedTemp0": 60,
+  "targetNozzleTemp": 220,
+  "video": 1,
+  "webrtcSupport": 1
+}

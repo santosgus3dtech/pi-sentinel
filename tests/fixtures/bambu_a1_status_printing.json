@@ -1,0 +1,14 @@
+{
+  "gcode_state": "RUNNING",
+  "mc_percent": 73,
+  "mc_remaining_time": 27,
+  "subtask_name": "fixture-part.3mf",
+  "gcode_file": "/data/Metadata/plate_1.gcode",
+  "nozzle_temper": 219.8125,
+  "nozzle_target_temper": 220,
+  "bed_temper": 59.9375,
+  "bed_target_temper": 60,
+  "print_error": 0,
+  "fail_reason": "0",
+  "hms": []
+}

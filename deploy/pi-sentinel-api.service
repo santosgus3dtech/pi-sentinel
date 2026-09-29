@@ -1,0 +1,23 @@
+[Unit]
+Description=PiSentinel network monitoring API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pisentinel
+Group=pisentinel
+WorkingDirectory=/opt/pi-sentinel
+EnvironmentFile=/etc/pi-sentinel/pisentinel.env
+ExecStart=/opt/pi-sentinel/.venv/bin/python -m uvicorn pisentinel.api:app --host 0.0.0.0 --port 8090 --no-access-log
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/pi-sentinel
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

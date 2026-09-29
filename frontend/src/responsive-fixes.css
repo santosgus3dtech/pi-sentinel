@@ -1,0 +1,19 @@
+/* Grid children default to their min-content width. Wide tables must scroll
+   inside their panel instead of widening the complete mobile page. */
+.app-shell > main,
+.content,
+.panel,
+.metrics {
+  min-width: 0;
+}
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

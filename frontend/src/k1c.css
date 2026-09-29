@@ -1,0 +1,23 @@
+.status.partial{color:var(--yellow)}
+.status.partial i{background:var(--yellow)}
+.printer-health-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.printer-health-grid>div{border:1px solid var(--line);border-radius:7px;padding:10px;display:grid;gap:4px;min-width:0}
+.printer-health-grid span,.printer-health-grid small{color:var(--muted);font-size:11px}
+.printer-health-grid small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.printer-health-grid strong{font-size:13px}
+.component-healthy{color:var(--green)}
+.component-degraded{color:var(--yellow)}
+.component-unavailable{color:var(--red)}
+.component-disabled,.component-unknown{color:var(--muted)}
+.printer-camera{overflow:hidden}
+.printer-camera>header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.printer-camera h3{margin:0}
+.printer-camera header p{margin:5px 0 0;color:var(--muted);font-size:12px}
+.printer-camera header span{border:1px solid var(--line);border-radius:20px;padding:5px 9px;color:var(--accent);font-size:11px}
+.printer-camera>div{min-height:320px;display:grid;place-items:center;background:#02070b}
+.printer-camera img{display:block;max-width:100%;max-height:70vh;object-fit:contain}
+@media(max-width:720px){
+  .printer-health-grid{grid-template-columns:1fr}
+  .printer-camera>header{align-items:flex-start;flex-direction:column}
+  .printer-camera>div{min-height:220px}
+}

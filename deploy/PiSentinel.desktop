@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Link
+Name=PiSentinel
+Comment=Abrir o analisador da rede local
+URL=http://127.0.0.1:8090
+Icon=network-workgroup
+Terminal=false
