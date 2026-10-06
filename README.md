@@ -17,6 +17,21 @@ This public repository is a sanitized portfolio edition. It contains no producti
 
 Both screens use synthetic portfolio data and the deterministic mock printer adapter.
 
+## Reproducible demo scenario
+
+Generate a local portfolio database with seven fictional devices, two monitored targets, a mock
+3D printer, one recovered incident and one active outage:
+
+```bash
+python -m pisentinel.demo --output data/demo-pisentinel.db --replace
+set PISENTINEL_DB_PATH=data/demo-pisentinel.db
+set PISENTINEL_MOCK_PRINTER_ENABLED=true
+python -m uvicorn pisentinel.api:app --host 127.0.0.1 --port 8090
+```
+
+The generator only uses documentation-only IP addresses, locally administered MAC addresses and
+invented device names. It refuses to overwrite an existing database unless `--replace` is explicit.
+
 ## What it demonstrates
 
 - Bounded IPv4 discovery with ARP, ICMP, DNS, and limited TCP service checks.
