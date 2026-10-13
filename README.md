@@ -1,5 +1,7 @@
 # PiSentinel
 
+🇧🇷 [Leia este README em Português (Brasil)](README.pt-BR.md).
+
 [![CI](https://github.com/santosgus3dtech/pi-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/santosgus3dtech/pi-sentinel/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=111)](https://react.dev/)
