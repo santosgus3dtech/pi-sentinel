@@ -28,3 +28,5 @@ frontend/*.tsbuildinfo
 
 .DS_Store
 Thumbs.db
+/docs/.obsidian/
+/docs/.trash/
